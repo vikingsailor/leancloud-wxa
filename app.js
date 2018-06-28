@@ -6,7 +6,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var weixin = require('./routes/weixin');
 var AV = require('leanengine');
-var xlsx = require('node-xlsx');
 
 // 设置模板引擎
 app.set('views', path.join(__dirname, 'views'));
