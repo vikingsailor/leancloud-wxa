@@ -27,16 +27,7 @@
     "lodash": "^4.17.4",
     "uuid": "^3.0.1",
     "wechat-api": "^1.35.1",
-    "weixin-pay": "^1.1.7",
-    "node-xlsx": {
-      "version": "0.12.1",
-      "resolved": "https://registry.npmjs.org/node-xlsx/-/node-xlsx-0.12.1.tgz",
-      "integrity": "sha512-PMIv0Gs05zb+7ZUQIMA5Fw8eFHxT8fVieKUKMUXI5EBuCsZ56bYKeaMaBf7pBAH3cw8Xa+dGK/xaLWZaEuyfiw==",
-      "requires": {
-        "buffer-from": "^1.1.0",
-        "xlsx": "^0.12.4"
-      }
-    }
+    "weixin-pay": "^1.1.7"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
