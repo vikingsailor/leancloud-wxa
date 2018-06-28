@@ -7,7 +7,7 @@ const { wxpay, wxapi } = require('../libs/wxapi');
  * 小程序创建订单
  */
 AV.Cloud.define('order', (request, response) => {
-    console.log("输出文件夹名字==>"+__dirname);
+    
     const user = request.currentUser;
     if (!user) {
         return response.error(new Error('用户未登录'));
@@ -36,6 +36,7 @@ AV.Cloud.define('order', (request, response) => {
     order.setACL(acl);
     order.place().then(() => {
         console.log(`预订单创建成功：订单号 [${order.tradeId}] prepayId [${order.prepayId}]`);
+        console.log("输出文件夹名字==>"+__dirname);
         const payload = {
             appId: process.env.WEIXIN_APPID,
             timeStamp: String(Math.floor(Date.now() / 1000)),
