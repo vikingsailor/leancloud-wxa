@@ -27,7 +27,9 @@
     "lodash": "^4.17.4",
     "uuid": "^3.0.1",
     "wechat-api": "^1.35.1",
-    "weixin-pay": "^1.1.7"
+    "weixin-pay": "^1.1.7",
+    "node-xlrd": "0.2.4",
+    "excel-export": "0.4.1"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
