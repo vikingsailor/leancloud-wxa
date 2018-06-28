@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var weixin = require('./routes/weixin');
 var AV = require('leanengine');
-var xlsx = require('node-xlsx');
+//var xlsx = require('node-xlsx');
 //var fs = require('fs');
 //var app = express();
 
