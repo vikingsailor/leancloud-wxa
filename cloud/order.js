@@ -19,7 +19,7 @@ AV.Cloud.define('order', (request, response) => {
     order.tradeId = uuid().replace(/-/g, '');
     order.status = 'INIT';
     order.user = request.currentUser;
-    order.productDescription = '武汉杨冠科技';
+    order.productDescription = '武汉扬冠科技';
     order.amount = request.params.money;
     order.ip = request.meta.remoteAddress;
     if (!(order.ip && /^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/.test(order.ip))) {
