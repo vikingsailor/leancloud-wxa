@@ -2,8 +2,7 @@ const uuid = require('uuid/v4');
 const AV = require('leanengine');
 const Order = require('../model/order');
 const { wxpay, wxapi } = require('../libs/wxapi');
-var xlsx = require('node-xlsx');
-var fs = require('fs');
+
 /** 
  * 小程序创建订单
  */
