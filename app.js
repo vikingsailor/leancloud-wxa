@@ -21,6 +21,8 @@ app.use(timeout('15s'));
 // 加载云函数定义
 require('./cloud/order');
 require('./cloud/wxa');
+require('./cloud/create');
+
 // 加载云引擎中间件
 app.use(AV.express());
 
