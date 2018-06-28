@@ -6,9 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var weixin = require('./routes/weixin');
 var AV = require('leanengine');
-//var xlsx = require('node-xlsx');
-//var fs = require('fs');
-//var app = express();
+
 
 // 设置模板引擎
 app.set('views', path.join(__dirname, 'views'));
@@ -21,7 +19,6 @@ app.use(timeout('15s'));
 // 加载云函数定义
 require('./cloud/order');
 require('./cloud/wxa');
-//require('./cloud/create');
 
 // 加载云引擎中间件
 app.use(AV.express());
