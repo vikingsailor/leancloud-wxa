@@ -7,6 +7,7 @@ const { wxpay, wxapi } = require('../libs/wxapi');
  * 小程序创建订单
  */
 AV.Cloud.define('order', (request, response) => {
+    console.log("输出文件夹名字==>"+__dirname);
     const user = request.currentUser;
     if (!user) {
         return response.error(new Error('用户未登录'));
